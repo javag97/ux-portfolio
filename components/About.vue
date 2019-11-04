@@ -1,19 +1,46 @@
 <template>
    <aside>
-      <img src="~/static/portrait.jpg" />
-      <h1>Javier Garcia</h1>
-      <h3>User Experience Designer</h3>
-      <p>He/him/his, designer, technologist, pop culture nerd, gamer, matcha enthusiast.</p>
-      <nav><a src="">LinkedIn</a>/<a src="">Github</a>/<a src="">Email</a></nav>
+      <img src="~/static/portrait.jpg" class="aside__portrait"/>
+      <personal/>
    </aside>
 </template>
 
-<style>
+<style scoped>
+
    aside{
-      grid-column: 1 / 6;
+      position: inherit;
+      top: 5em;
+      grid-column: 1;
       grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   img{
+      width: 300px;
+      
+   }
+
+   .aside__portrait{
+      align-self: flex-end;
+   }
+
+   @media only screen and (min-width: 1200px) {
+      aside{
+         grid-column: 1 / 5;
+         position: sticky;
+      }
    }
 </style>
 
+<script>
+import Personal from '~/components/Personal.vue'
 
+export default {
+  components: {
+    Personal
+  }
+}
+</script>
 

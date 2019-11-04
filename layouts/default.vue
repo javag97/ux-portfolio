@@ -1,10 +1,38 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="container">
+      <about />
+      <nuxt />
   </div>
 </template>
 
+<script>
+import About from '~/components/About.vue'
+
+export default {
+  components: {
+    About
+  }
+}
+</script>
+
 <style>
+
+   @media only screen and (min-width: 1200px) {
+      .container{
+         grid-template-columns: repeat(12, 1fr);
+      }
+   }
+
+
+   .container{
+      align-items: start;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 64px 1fr 64px;
+      grid-gap: 48px;
+      padding: 0 3%;
+   }
+
   @font-face {
     font-family: "Work Sans";
     src: url("/static/WOFF2/WorkSans-Regular.woff2") format("woff2"),
@@ -51,13 +79,17 @@
 html {
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont,
     Roboto, Arial, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   /*word-spacing: 1px;*/
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  -moz-font-feature-settings: "salt" 1;
+  -webkit-font-feature-settings: "salt" 1;
+  font-feature-settings: "salt" 1;
+  color: #090835;
 }
 
 *,
@@ -66,5 +98,14 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
 </style>
+
+<script>
+import About from '~/components/About.vue'
+
+export default {
+  components: {
+    About
+  }
+}
+</script>

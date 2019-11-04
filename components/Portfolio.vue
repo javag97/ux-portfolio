@@ -1,28 +1,32 @@
 <template>
-   <div>
-      <about />
       <section>
          <card />
          <card />
          <card />
       </section>
-   </div>
 </template>
 
 <script>
-import About from '~/components/About.vue'
 import Card from '~/components/Card.vue'
 
 export default {
   components: {
-    About, Card
+   Card
   }
 }
 </script>
 
-<style>
+<style scoped>
+   @media only screen and (min-width: 1200px) {
+      section{
+         grid-column: 1;
+         grid-row: 3;
+      }
+   }
+
    section{
       grid-column: 6 / 13;
       grid-row: 2;
    }
+
 </style>
