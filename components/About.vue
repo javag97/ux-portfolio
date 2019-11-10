@@ -9,21 +9,12 @@
 
    aside{
       position: inherit;
-      top: 5em;
+      top: 72px;
       grid-column: 1;
       grid-row: 2;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-   }
-
-   img{
-      width: 300px;
-      
-   }
-
-   .aside__portrait{
-      align-self: flex-end;
    }
 
    @media only screen and (min-width: 1200px) {
@@ -32,6 +23,17 @@
          position: sticky;
       }
    }
+
+   img{
+      width: 250px;
+      
+   }
+
+   .aside__portrait{
+      align-self: flex-end;
+   }
+
+
 </style>
 
 <script>

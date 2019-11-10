@@ -17,22 +17,6 @@ export default {
 
 <style>
 
-   @media only screen and (min-width: 1200px) {
-      .container{
-         grid-template-columns: repeat(12, 1fr);
-      }
-   }
-
-
-   .container{
-      align-items: start;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 64px 1fr 64px;
-      grid-gap: 48px;
-      padding: 0 3%;
-   }
-
   @font-face {
     font-family: "Work Sans";
     src: url("/static/WOFF2/WorkSans-Regular.woff2") format("woff2"),
@@ -91,6 +75,17 @@ html {
   font-feature-settings: "salt" 1;
   color: #090835;
 }
+   section{
+      grid-column: 1;
+      grid-row: 3;
+   }
+
+   @media only screen and (min-width: 1200px) {
+      section{
+      grid-column: 6 / 13;
+      grid-row: 2;
+      }
+   }
 
 *,
 *:before,
@@ -98,6 +93,25 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+a{
+   text-decoration: underline;
+}
+
+   .container{
+      align-items: start;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 24px 1fr 64px;
+      grid-gap: 48px;
+      padding: 0 3%;
+   }
+
+   @media only screen and (min-width: 1200px) {
+      .container{
+         grid-template-columns: repeat(12, 1fr);
+      }
+   }
 </style>
 
 <script>

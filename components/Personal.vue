@@ -2,8 +2,8 @@
    <div class="aside__wrapper">
       <h1>Javier Garcia</h1>
       <h3>User Experience Designer</h3>
-      <p>He/him/his, designer, technologist, pop culture nerd, gamer, matcha enthusiast.</p>
-      <nav><a src="https://linkedin.com/in/javigme/">LinkedIn</a> / <a src="https://github.com/javag97">Github</a> / <a src="mailto:javier.garcia549@gmail.com">Email</a></nav>
+      <p>Visual designer, web technologist, pop culture nerd, gamer, matcha enthusiast.</p>
+      <nav><a href="https://linkedin.com/in/javigme/">LinkedIn</a> / <a href="https://github.com/javag97">Github</a> / <a href="mailto:javier.garcia549@gmail.com">Email</a></nav>
    </div>
 </template>
 
@@ -15,7 +15,7 @@
    }
 
    h1{
-      font-size: 4em;
+      font-size: 3em;
       line-height: 0.9;
    }
 
