@@ -98,7 +98,17 @@ a{
    text-decoration: underline;
 }
 
-   .container{
+.nuxt-link--button{
+   color: #EEEEEE;
+   text-decoration: none;
+}
+
+.nuxt-link--text{
+   color: #090835;
+   text-decoration: none;
+}
+
+.container{
       align-items: start;
       display: grid;
       grid-template-columns: 1fr;

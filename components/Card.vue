@@ -1,19 +1,22 @@
 <template>
-   <div>
+   <nuxt-link class="card" to="/test/">
       <img src="https://source.unsplash.com/random/800x400" />
       <h2>Single Document Mode</h2>
       <p>B2B Compute for Data Science</p> 
       <button>
          Read more
       </button>
-   </div>
+   </nuxt-link>
 </template>
 
 
 <style scoped>
-   div{
+   .card{
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      color: #090835;
+      margin-bottom: 3em;
    }
 
    img{
@@ -40,8 +43,8 @@
       letter-spacing: 0.05em;
       color: #EEEEEE;
       border-radius: 2px;
-      margin: 0.5em 0px 3em;
+      margin: 0.5em 0px 0px;
+      cursor: pointer;
    }
-
 
 </style>

@@ -1,6 +1,6 @@
 <template>
    <div class="aside__wrapper">
-      <h1>Javier Garcia</h1>
+      <nuxt-link class="nuxt-link--text" to="/"><h1>Javier Garcia</h1></nuxt-link>
       <h3>User Experience Designer</h3>
       <p>Visual designer, web technologist, pop culture nerd, gamer, matcha enthusiast.</p>
       <nav><a href="https://linkedin.com/in/javigme/">LinkedIn</a> / <a href="https://github.com/javag97">Github</a> / <a href="mailto:javier.garcia549@gmail.com">Email</a></nav>
@@ -35,5 +35,6 @@
    nav{
       padding-top: 2em;
    }
+
 </style>
 

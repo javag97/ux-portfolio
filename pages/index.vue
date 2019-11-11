@@ -1,13 +1,17 @@
 <template>
-   <Portfolio/>
+      <section>
+         <card />
+         <card />
+         <card />
+      </section>
 </template>
 
 <script>
-import Portfolio from '~/components/Portfolio.vue'
+import Card from '~/components/Card.vue'
 
 export default {
   components: {
-   Portfolio
+   Card
   }
 }
 </script>
