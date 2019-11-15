@@ -1,8 +1,8 @@
 <template>
    <nuxt-link class="card" to="/test/">
-      <img src="https://source.unsplash.com/random/800x400" />
-      <h2>Single Document Mode</h2>
-      <p>B2B Compute for Data Science</p> 
+      <img src={{ url }} />
+      <h2>{{ header }}</h2>
+      <p>{{ description }}</p> 
       <button>
          Read more
       </button>
@@ -48,3 +48,14 @@
    }
 
 </style>
+
+
+
+<script>
+import Vue from "vue";
+
+Vue.component('Card', {
+   props: ['url', 'header', 'description']
+})
+   
+</script>
