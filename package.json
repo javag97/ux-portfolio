@@ -11,7 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "axios": "^0.19.0",
+    "nuxt": "^2.0.0",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.1.1"
   },
   "devDependencies": {}
 }
