@@ -1,6 +1,6 @@
 <template>
    <nuxt-link class="card" to="/test/">
-      <img src={{ url }} />
+      <img v-bind:src="url" />
       <h2>{{ header }}</h2>
       <p>{{ description }}</p> 
       <button>
@@ -52,10 +52,13 @@
 
 
 <script>
-import Vue from "vue";
+export default {
+  props: [
+    'url',
+    'header',
+    'description'
+  ]
+}
 
-Vue.component('Card', {
-   props: ['url', 'header', 'description']
-})
-   
+
 </script>

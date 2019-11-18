@@ -1,24 +1,29 @@
 <template>
    <section>  
-      <h1>{{header}}</h1>
-      <p>{{content}}</p>
+      <h1>{{post.header}}</h1>
+      <p>{{post.content}}</p>
    </section>
 </template>
 <script>
+/*
 import Prismic from "prismic-javascript";
 import PrismicDom from "prismic-dom" //importing the Dom
 import PrismicConfig from "./../prismic.config.js";
+*/
 
 export default {
-
-  data(){
-   console.log("Test");
-   return {
-      header: 'weqweq',
-      content: 'ewqe'
-   };
-  },
-
+  data: () => ({
+     id: this.$route.params.id,
+      posts: [
+        { id: 'jupyter', header: 'testing', content: 'hey'},
+        { id: 'fucko', header: 'testing 2', content: 'hey 2'},
+        { id: 'yes', header: 'testing 3', content: 'hey 3'}
+      ]
+  }),
+  computed: {
+     post: () => this.posts.find(post => post.id === this.id)
+  }
+/*
   async asyncData() {
     const api = await Prismic.getApi(PrismicConfig.apiEndpoint);
     let works = {};
@@ -35,6 +40,7 @@ export default {
         header: header,
         content: content
     };
-  }
+  } 
+  */
 };
 </script>
