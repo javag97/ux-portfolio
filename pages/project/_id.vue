@@ -12,16 +12,20 @@ import PrismicConfig from "./../prismic.config.js";
 */
 
 export default {
-  data: () => ({
+  data(){
+     return {
      id: this.$route.params.id,
       posts: [
-        { id: 'jupyter', header: 'testing', content: 'hey'},
+        { id: 'jupyter', header: 'fuck u bitch', content: 'hey'},
         { id: 'fucko', header: 'testing 2', content: 'hey 2'},
         { id: 'yes', header: 'testing 3', content: 'hey 3'}
       ]
-  }),
+   }
+  },
   computed: {
-     post: () => this.posts.find(post => post.id === this.id)
+     post(){
+        return this.posts.find(post => post.id === this.id);
+     } 
   }
 /*
   async asyncData() {
