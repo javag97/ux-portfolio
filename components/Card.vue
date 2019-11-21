@@ -1,5 +1,5 @@
 <template>
-   <nuxt-link class="card" to="/test/">
+   <nuxt-link class="card" to="/project/jupyter/">
       <img v-bind:src="url" />
       <h2>{{ header }}</h2>
       <p>{{ description }}</p> 
@@ -22,6 +22,7 @@
    img{
       width: 100%;
       height: 400px;
+      object-fit: cover;
    }
 
    h2{
